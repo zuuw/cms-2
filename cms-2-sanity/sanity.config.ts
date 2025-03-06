@@ -5,10 +5,10 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'cody-first-cms',
+  title: 'cms-2-sanity',
 
   projectId: 'mkmkyko2',
-  dataset: 'head',
+  dataset: "head",
 
   plugins: [structureTool(), visionTool()],
 
