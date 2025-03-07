@@ -3,6 +3,8 @@ import { type SanityDocument } from "next-sanity";
 
 import { client } from "./sanity/client";
 import Header from "./components/Header/head";
+import Maininfo from "./components/Main/mainsvg";
+import Description from "./components/Main/description";
 
 
 const POSTS_QUERY = `*[
@@ -18,6 +20,8 @@ export default async function IndexPage() {
   return (
     <main className="container mx-auto min-h-screen max-w-3xl p-8">
       <Header />
+      <Maininfo />
+      <Description />  
       <ul className="flex flex-col gap-y-4">
         {posts.map((post) => (
           <li className="hover:underline" key={post._id}>
